@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Guid>e838248d-97c8-4558-bd2c-663ad0661436</Guid>
+    <Name>Start With Infinite Medikits</Name>
+    <Description>Did you like long war and how it started xcom with medikits? If so, this mod will work great because it starts your xcom game off with an infinite supply of medikits that will upgrade to a similarly infinite supply of nanomedikits with the proving grounds project.</Description>
+    <SteamPublishID>0</SteamPublishID>
+    <AssemblyName>Start With Infinite Medikits</AssemblyName>
+    <RootNamespace>Start With Infinite Medikits</RootNamespace>
+    <ProjectGuid>{c9fbd142-33b3-44ad-82fc-b39a3b13b87f}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Config\" />
+    <Folder Include="Content\" />
+    <Folder Include="Localization\" />
+    <Folder Include="Src\" />
+    <Folder Include="Src\XComGame\" />
+    <Folder Include="Src\XComGame\Classes\" />
+    <Folder Include="Src\StartWithInfiniteMedikits\" />
+    <Folder Include="Src\StartWithInfiniteMedikits\Classes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ReadMe.txt" />
+    <Content Include="ModPreview.jpg" />
+    <Content Include="Config\XComEditor.ini" />
+    <Content Include="Config\XComEngine.ini" />
+    <Content Include="Config\XComGame.ini" />
+    <Content Include="Localization\XComGame.int" />
+    <Content Include="Src\StartWithInfiniteMedikits\Classes\SWIM.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\StartWithInfiniteMedikits\Classes\X2DownloadableContentInfo_StartWithInfiniteMedikits.uc" />
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)\XCOM2.targets" />
+</Project>

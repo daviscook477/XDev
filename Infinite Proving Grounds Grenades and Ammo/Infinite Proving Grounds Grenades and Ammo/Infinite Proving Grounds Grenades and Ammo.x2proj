@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Guid>3c3ee794-a540-4b28-8c79-ce469a7042e3</Guid>
+    <Name>Infinite Proving Grounds Grenades and Ammo</Name>
+    <Description>In the base game, when you complete the experimental grenade project in the proving grounds, you end up with only getting one copy of the grenade. That can suck if you want to use that type of grenade on multiple soldiers so this mod changes it such that whenever you get a grenade or ammo from the proving grounds it has infinite uses, i.e. you can equip it to anyone.
+
+Of course, you still have to unlock the grenade type or ammo type using the proving grounds first. XD.</Description>
+    <SteamPublishID>0</SteamPublishID>
+    <AssemblyName>Infinite Proving Grounds Grenades and Ammo</AssemblyName>
+    <RootNamespace>Infinite Proving Grounds Grenades and Ammo</RootNamespace>
+    <ProjectGuid>{0e0e0c19-a601-4217-b8f0-d6cdacdd60ca}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Config\" />
+    <Folder Include="Content\" />
+    <Folder Include="Localization\" />
+    <Folder Include="Src\" />
+    <Folder Include="Src\XComGame\" />
+    <Folder Include="Src\XComGame\Classes\" />
+    <Folder Include="Src\InfiniteProvingGroundsGrenadesandAmmo\" />
+    <Folder Include="Src\InfiniteProvingGroundsGrenadesandAmmo\Classes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ReadMe.txt" />
+    <Content Include="ModPreview.jpg" />
+    <Content Include="Config\XComEditor.ini" />
+    <Content Include="Config\XComEngine.ini" />
+    <Content Include="Config\XComGame.ini" />
+    <Content Include="Localization\XComGame.int" />
+    <Content Include="Src\InfiniteProvingGroundsGrenadesandAmmo\Classes\IPGGAA_ResearchReportListener.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\InfiniteProvingGroundsGrenadesandAmmo\Classes\IPGGAA_UIScreenListener.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\InfiniteProvingGroundsGrenadesandAmmo\Classes\X2DownloadableContentInfo_InfiniteProvingGroundsGrenadesandAmmo.uc" />
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)\XCOM2.targets" />
+</Project>

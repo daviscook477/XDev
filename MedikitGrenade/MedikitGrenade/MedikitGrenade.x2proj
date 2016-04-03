@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Guid>74d76892-24c8-47bd-a39e-abbe46daf1b2</Guid>
+    <Name>Medikit Grenade</Name>
+    <Description>I've always felt that XCom didn't have enough grenade types. Well luckily, this mod adds another!
+
+Let me introduce you to the Medikit Grenade and the Nanomedikit Grenade! They function as throwable medikits that heal everyone in their blast radius.
+
+In order to balance them, the Medikit Grenade only heals 2HP and the Nanomedikit Grenade only heals 4HP (compared to the normal Medikit healing 4HP and the Nanomedikit healing 6HP).
+
+The Medikit Grenade is available as a reward for the Experimental Grenade Proving Grounds project and will upgrade to a Nanomedikit Grenade once the grenade upgrading project is completed.</Description>
+    <SteamPublishID>0</SteamPublishID>
+    <AssemblyName>MedikitGrenade</AssemblyName>
+    <RootNamespace>MedikitGrenade</RootNamespace>
+    <ProjectGuid>{bb393e75-b5fc-4528-bbef-d14b841efc1a}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Config\" />
+    <Folder Include="Content\" />
+    <Folder Include="Localization\" />
+    <Folder Include="Src\" />
+    <Folder Include="Src\XComGame\" />
+    <Folder Include="Src\XComGame\Classes\" />
+    <Folder Include="Src\MedikitGrenade\" />
+    <Folder Include="Src\MedikitGrenade\Classes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\XComMG.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ReadMe.txt" />
+    <Content Include="ModPreview.jpg" />
+    <Content Include="Config\XComEditor.ini" />
+    <Content Include="Config\XComEngine.ini" />
+    <Content Include="Config\XComGame.ini" />
+    <Content Include="Localization\XComGame.int" />
+    <Content Include="Src\MedikitGrenade\Classes\MGGrenade_Medikit.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\MedikitGrenade\Classes\MG_UIScreenListener.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\MedikitGrenade\Classes\X2DownloadableContentInfo_MedikitGrenade.uc" />
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)\XCOM2.targets" />
+</Project>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Guid>e10595cf-8500-4a74-b23d-74e4e5035f67</Guid>
+    <Name>Start With Flashbang And Smoke Grenade</Name>
+    <Description>Annoyed that you have to build smokes and flashbangs? Well this mod starts XCom out with an infinite supply of both!</Description>
+    <SteamPublishID>0</SteamPublishID>
+    <AssemblyName>StartWithFlashbangAndSmoke</AssemblyName>
+    <RootNamespace>StartWithFlashbangAndSmoke</RootNamespace>
+    <ProjectGuid>{1f82b968-1dcb-4fea-aaf8-ffcc5d55e898}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Config\" />
+    <Folder Include="Content\" />
+    <Folder Include="Localization\" />
+    <Folder Include="Src\" />
+    <Folder Include="Src\XComGame\" />
+    <Folder Include="Src\XComGame\Classes\" />
+    <Folder Include="Src\StartWithFlashbangAndSmokeGrenade\" />
+    <Folder Include="Src\StartWithFlashbangAndSmokeGrenade\Classes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ReadMe.txt" />
+    <Content Include="ModPreview.jpg" />
+    <Content Include="Config\XComEditor.ini" />
+    <Content Include="Config\XComEngine.ini" />
+    <Content Include="Config\XComGame.ini" />
+    <Content Include="Localization\XComGame.int" />
+    <Content Include="Src\StartWithFlashbangAndSmokeGrenade\Classes\SWFASG_UIScreenListener.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\StartWithFlashbangAndSmokeGrenade\Classes\X2DownloadableContentInfo_StartWithFlashbangAndSmokeGrenade.uc" />
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)\XCOM2.targets" />
+</Project>
